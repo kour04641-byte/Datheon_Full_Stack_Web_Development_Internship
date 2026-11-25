@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japneet Kour | Portfolio</title>
+<meta name="description" content="Japneet Kour - MBA (Business Analytics). I build AI-powered applications, Power BI dashboards and turn data into decisions.">
+<meta name="theme-color" content="#04130f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Japneet Kour | MBA Business Analytics · AI Builder">
+<meta property="og:description" content="Portfolio of Japneet Kour: RAG chatbots, generative AI apps and business analytics.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff5d95'/%3E%3Cstop offset='1' stop-color='%23ffc58a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2304130f'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EJK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Japneet Kour","jobTitle":"MBA (Business Analytics) Candidate","email":"mailto:japneetkour1984@gmail.com","sameAs":["https://linkedin.com/in/japneet-kour-629607379"],"alumniOf":"Eternal University, Baru Sahib","knowsAbout":["Business Analytics","Power BI","DAX","Exploratory Data Analysis","Customer Churn Analysis","Generative AI","Retrieval-Augmented Generation","Python","Machine Learning","Data Analysis"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04130f; --rose:#ff6b9d; --peach:#ffb38a; --mint:#5df2c0; --mint2:#b8ffe6;
+  --panel:rgba(255,255,255,.035); --line:rgba(93,242,192,.22); --text:#f3efe9; --muted:#9db3ab;
+  --gg:linear-gradient(120deg,#ff5d95 0%,#ff8f9c 50%,#ffc58a 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;line-height:1.7;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.display{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.5px;line-height:1.02}
+.gold{background:var(--gg);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mono{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--mint)}
+::selection{background:var(--rose);color:#fff}
+body::before{content:"";position:fixed;inset:0;z-index:-1;
+  background:radial-gradient(900px 600px at 82% -8%,rgba(255,107,157,.16),transparent 60%),
+             radial-gradient(800px 600px at -10% 70%,rgba(93,242,192,.12),transparent 60%),var(--bg)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.7}
+#prog{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--gg);transform-origin:0 50%;transform:scaleX(0);z-index:200}
+
+/* LOADER */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:grid;place-items:center;
+  transition:transform 1.1s cubic-bezier(.77,0,.18,1);animation:ldfail .01s 6s forwards}
+#loader::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:3px;background:var(--gg)}
+#loader.done{transform:translateY(-101%)}
+@keyframes ldfail{to{visibility:hidden}}
+.ld{text-align:center}
+.ld-name{font-family:'Anton';font-size:clamp(2.2rem,7vw,5rem);letter-spacing:6px;color:var(--text);overflow:hidden}
+.ld-name span{display:inline-block;transform:translateY(110%);animation:chUp .8s cubic-bezier(.2,.9,.2,1) both}
+.ld-bar{width:min(320px,70vw);height:2px;background:rgba(255,255,255,.1);margin:22px auto 12px;overflow:hidden}
+.ld-bar i{display:block;height:100%;background:var(--gg);transform-origin:0 50%;transform:scaleX(0)}
+.ld-num{font-family:'JetBrains Mono';font-size:.8rem;letter-spacing:4px;color:var(--mint)}
+
+/* CURSOR */
+#cur,#curR{position:fixed;left:0;top:0;pointer-events:none;z-index:9998;display:none}
+#cur{width:8px;height:8px;border-radius:50%;background:var(--rose)}
+#curR{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,107,157,.7);transition:width .3s,height .3s,background .3s,border-color .3s}
+#curR.big{width:70px;height:70px;background:rgba(255,107,157,.12);border-color:var(--mint)}
+body.has-cur #cur,body.has-cur #curR{display:block}
+body.has-cur,body.has-cur a,body.has-cur button{cursor:none}
+body.has-cur input,body.has-cur textarea{cursor:text}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:20px 6%;transition:.5s}
+nav.solid{background:rgba(4,19,15,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 6%}
+nav.hide{transform:translateY(-110%)}
+.logo{font-family:'Anton';font-size:1.5rem;letter-spacing:2px}
+.logo b{color:var(--rose)}
+nav ul{display:flex;gap:38px;list-style:none}
+nav ul a{font-size:.74rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);transition:.3s;position:relative}
+nav ul a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--rose);transition:.3s}
+nav ul a:hover{color:#fff} nav ul a:hover::after{width:100%}
+.talk{font-size:.74rem;letter-spacing:3px;text-transform:uppercase;color:var(--mint);border:1px solid var(--line);padding:10px 20px;transition:.3s}
+.talk:hover{background:var(--mint);color:#04130f}
+.burger{display:none;cursor:pointer;font-size:1.5rem;color:var(--mint)}
+
+section{position:relative;z-index:1;padding:130px 6% 70px;max-width:1300px;margin:auto}
+.label{margin-bottom:14px;display:block}
+.sec-title{font-size:clamp(2.6rem,6.5vw,5.4rem);margin-bottom:50px}
+
+/* BUTTONS */
+.btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn{padding:15px 32px;font-size:.74rem;letter-spacing:3px;text-transform:uppercase;font-weight:600;transition:transform .3s,box-shadow .35s,background .35s;display:inline-block;border:1px solid var(--mint);position:relative}
+.btn.fill{background:var(--gg);color:#240814;border-color:transparent}
+.btn.fill:hover{box-shadow:0 0 50px rgba(255,107,157,.6)}
+.btn.line{color:var(--mint)}
+.btn.line:hover{background:rgba(93,242,192,.12)}
+
+/* HERO */
+#home{min-height:100vh;max-width:none;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding-top:110px;overflow:hidden}
+.hero-l,.hero-r{min-width:0}
+.hero-l{position:relative;z-index:3}
+.hero-l h1{font-size:clamp(3.4rem,7.8vw,7.6rem);margin:14px 0 20px}
+.ln{display:block;overflow:hidden;width:max-content;max-width:none;padding:.03em 0 .1em;margin-bottom:-.06em}
+.ch{display:inline-block;transform:translateY(125%) rotate(9deg);opacity:0}
+.loaded .ch{animation:chUp .95s cubic-bezier(.2,.9,.2,1) calc(var(--d,0)*1ms + var(--i)*38ms + 250ms) both}
+@keyframes chUp{to{transform:none;opacity:1}}
+.ld-name span{animation-delay:calc(var(--i)*60ms)}
+.roles{font-family:'JetBrains Mono';font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--mint);min-height:1.4em}
+.roles b{color:var(--rose);font-weight:500}
+.hero-l p{color:var(--muted);max-width:520px;margin:22px 0 34px;font-size:1.02rem}
+.roles,.hero-l p,.hero-l .btns,.scrollcue{opacity:0;transform:translateY(30px)}
+.loaded .roles{animation:up .9s .3s both}
+.loaded .hero-l p{animation:up .9s 1.3s both}
+.loaded .hero-l .btns{animation:up .9s 1.5s both}
+.loaded .scrollcue{animation:up .9s 2s both}
+@keyframes up{to{opacity:1;transform:none}}
+.scrollcue{display:flex;align-items:center;gap:14px;margin-top:46px;font-family:'JetBrains Mono';font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+.scrollcue i{width:1px;height:46px;background:linear-gradient(var(--rose),transparent);position:relative;overflow:hidden}
+.scrollcue i::after{content:"";position:absolute;left:0;top:-100%;width:100%;height:100%;background:#fff;animation:drip 2s infinite}
+@keyframes drip{to{top:100%}}
+
+.hero-r{position:relative;height:min(84vh,780px);display:flex;justify-content:center;align-items:flex-end}
+.stage{position:relative;width:min(470px,100%);height:100%}
+.beam{position:absolute;top:-6%;left:50%;width:70%;height:100%;transform:translateX(-50%);
+  background:linear-gradient(180deg,rgba(255,150,190,.5),rgba(255,150,190,.02) 85%);
+  clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);filter:blur(28px);opacity:0}
+.loaded .beam{animation:beamin 2s .2s both,beam 6s 2.2s ease-in-out infinite alternate}
+@keyframes beamin{to{opacity:.5}}
+@keyframes beam{from{opacity:.5}to{opacity:.85;transform:translateX(-50%) scaleX(1.12)}}
+.arch{position:absolute;left:50%;bottom:0;width:96%;height:84%;transform:translateX(-50%) scaleY(.2);transform-origin:50% 100%;opacity:0;border-radius:999px 999px 14px 14px;
+  background:linear-gradient(170deg,#12896a 0%,#0a4a3b 45%,#2a1240 100%);border:1px solid rgba(93,242,192,.35);overflow:hidden;
+  box-shadow:0 30px 90px rgba(255,107,157,.18),inset 0 0 80px rgba(93,242,192,.12)}
+.loaded .arch{animation:archin 1.4s .1s cubic-bezier(.2,.9,.2,1) both}
+@keyframes archin{to{transform:translateX(-50%) scaleY(1);opacity:1}}
+.arch::before{content:"";position:absolute;inset:-60%;background:conic-gradient(from 0deg,transparent 0 55%,rgba(255,107,157,.55) 72%,transparent 85%,rgba(93,242,192,.4) 95%,transparent);animation:spin 9s linear infinite;opacity:.55}
+.arch::after{content:"";position:absolute;inset:3px;border-radius:inherit;background:linear-gradient(170deg,#0f7a5d 0%,#09392e 55%,#22103a 100%)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.initials{position:absolute;left:50%;top:34%;transform:translateX(-50%);font-family:'Anton';font-size:11rem;letter-spacing:6px;color:rgba(255,255,255,.06);z-index:1}
+.ring{position:absolute;left:50%;bottom:6%;width:96%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px dashed rgba(255,107,157,.35);animation:spin 40s linear infinite;pointer-events:none}
+.walk,.step,.float{position:absolute;inset:0;transform-origin:50% 100%}
+.walk{z-index:3;opacity:0}
+.loaded .walk{animation:walkin 3.8s .5s cubic-bezier(.25,.6,.3,1) both}
+.loaded .step{animation:stepbob .62s .5s ease-in-out 6}
+.loaded .float{animation:bob 6s 4.4s ease-in-out infinite}
+@keyframes walkin{0%{transform:translateX(18%) scale(.42);opacity:0;filter:blur(7px)}22%{opacity:1}100%{transform:none;opacity:1;filter:none}}
+@keyframes stepbob{0%,100%{transform:translateY(0) rotate(-1.6deg)}50%{transform:translateY(-16px) rotate(1.6deg)}}
+@keyframes bob{50%{transform:translateY(-14px)}}
+.me{position:absolute;left:50%;bottom:0;height:106%;transform:translateX(-50%);will-change:transform;
+  filter:drop-shadow(0 20px 40px rgba(0,0,0,.45)) drop-shadow(0 0 30px rgba(255,107,157,.18))}
+.floor{position:absolute;bottom:-1%;left:6%;right:6%;height:56px;border-radius:50%;z-index:2;opacity:0;
+  background:radial-gradient(ellipse,rgba(255,107,157,.55),rgba(93,242,192,.15) 55%,transparent 72%);filter:blur(10px)}
+.loaded .floor{animation:floorin 3.8s .5s ease-out both,glowf 6s 4.4s ease-in-out infinite}
+@keyframes floorin{from{opacity:0;transform:scaleX(.3)}to{opacity:1}}
+@keyframes glowf{50%{transform:scaleX(.88);opacity:.7}}
+.badge{position:absolute;z-index:5;padding:9px 16px;border-radius:50px;font-family:'JetBrains Mono';font-size:.64rem;letter-spacing:2px;text-transform:uppercase;opacity:0;
+  background:rgba(4,19,15,.72);backdrop-filter:blur(8px);border:1px solid rgba(93,242,192,.45);color:var(--mint2);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.loaded .badge{animation:pop .8s cubic-bezier(.2,1.4,.3,1) both,bob 5s ease-in-out infinite}
+.badge i{font-style:normal;color:var(--rose);margin-right:6px}
+.b1{left:-4%;top:30%}.b2{right:-4%;top:46%}.b3{left:2%;bottom:20%}
+.loaded .b1{animation-delay:3.4s,3.4s}.loaded .b2{animation-delay:3.7s,3.7s}.loaded .b3{animation-delay:4s,4s}
+@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:none}}
+.sig{position:absolute;right:0;bottom:4%;z-index:6;text-align:right;opacity:0}
+.loaded .sig{animation:up 1s 4s both}
+.sig small{display:block;font-family:'JetBrains Mono';font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);line-height:1.6}
+.sig span{font-family:'Mrs Saint Delafield',cursive;font-size:3.4rem;color:#ffc2d4;line-height:1}
+.spin-badge{position:absolute;right:-3%;top:4%;width:104px;height:104px;z-index:7;display:grid;place-items:center;opacity:0}
+.loaded .spin-badge{animation:pop .9s 4.2s cubic-bezier(.2,1.4,.3,1) both}
+.spin-badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 14s linear infinite}
+.spin-badge text{font-family:'JetBrains Mono';font-size:9.4px;letter-spacing:1px;fill:var(--mint2);text-transform:uppercase}
+.spin-badge b{width:42px;height:42px;border-radius:50%;background:var(--gg);color:#240814;display:grid;place-items:center;font-size:1.2rem;transition:transform .3s}
+.spin-badge:hover b{transform:rotate(45deg) scale(1.12)}
+
+/* MARQUEE */
+.mq{position:relative;z-index:1;overflow:hidden;white-space:nowrap;padding:22px 0;border-block:1px solid var(--line);background:rgba(93,242,192,.035);transform:rotate(-1.6deg);margin:30px 0 0}
+.mq.two{transform:rotate(1.2deg);margin-top:-14px;background:rgba(255,107,157,.05);border-color:rgba(255,107,157,.25)}
+.mq .tr{display:inline-flex;gap:46px;padding-right:46px;animation:mq 34s linear infinite}
+.mq.two .tr{animation-direction:reverse;animation-duration:40s}
+.mq:hover .tr{animation-play-state:paused}
+.mq span{font-family:'Anton';font-size:clamp(2rem,5vw,4rem);text-transform:uppercase;-webkit-text-stroke:1px rgba(255,255,255,.55);color:transparent;letter-spacing:2px}
+.mq span.f{-webkit-text-stroke:0;color:var(--rose)}
+.mq span.s{-webkit-text-stroke:0;color:var(--mint);font-size:clamp(1.4rem,3vw,2.4rem);align-self:center}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* STATEMENT */
+.statement{font-family:'Manrope';font-weight:600;font-size:clamp(1.6rem,3.9vw,3.2rem);line-height:1.28;max-width:1050px}
+.statement .w{color:rgba(243,239,233,.14);transition:color .5s,text-shadow .5s}
+.statement .w.on{color:var(--text)}
+.statement .w.hl.on{color:var(--rose);text-shadow:0 0 28px rgba(255,107,157,.45)}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.about h2{font-size:clamp(2.4rem,5.5vw,4.6rem);margin-bottom:24px}
+.about p{color:var(--muted);margin-bottom:16px}
+.about p b{color:var(--text);font-weight:600}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.spot{position:relative}
+.spot::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,107,157,.16),transparent 60%)}
+.spot:hover::after{opacity:1}
+.stat{border:1px solid var(--line);background:var(--panel);padding:28px 24px;transition:border-color .4s,transform .4s,box-shadow .4s}
+.stat:hover{border-color:var(--rose);transform:translateY(-6px);box-shadow:0 18px 50px rgba(255,107,157,.14)}
+.stat h3{font-size:3.2rem}
+.stat p{font-family:'JetBrains Mono';font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:6px 0 0}
+
+/* WORKS (stacking cards) */
+.work{display:grid;grid-template-columns:70px 1fr 1fr;gap:34px;border:1px solid var(--line);
+  background:linear-gradient(135deg,#0b2e25,#07201a 60%,#0a1a22);
+  padding:44px;margin-bottom:12vh;position:sticky;top:calc(96px + var(--k)*30px);overflow:hidden;transform-origin:50% 0;
+  transform:perspective(1200px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(var(--s,1));transition:border-color .4s;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.work:hover{border-color:var(--rose)}
+.work::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gg)}
+.num{font-family:'Anton';font-size:3.4rem;color:rgba(255,107,157,.5);line-height:1}
+.work h3{font-size:clamp(1.8rem,3.4vw,2.9rem);margin:8px 0 14px}
+.work p{color:var(--muted);font-size:.96rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-family:'JetBrains Mono';font-size:.64rem;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px;border:1px solid var(--line);color:var(--mint2);background:rgba(93,242,192,.05);transition:.3s}
+.chip:hover{background:var(--mint);color:#04130f;transform:translateY(-3px) rotate(-2deg)}
+.spec{border:1px solid rgba(255,255,255,.07);background:rgba(0,0,0,.35);padding:8px 22px}
+.spec div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.88rem}
+.spec div:last-child{border:0}
+.spec span:first-child{font-family:'JetBrains Mono';font-size:.64rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.spec span:last-child{text-align:right;color:var(--text)}
+.demo{display:inline-block;margin-top:22px;color:var(--peach);font-size:.74rem;letter-spacing:3px;text-transform:uppercase;border-bottom:1px solid var(--peach);padding-bottom:3px}
+.demo:hover{color:#fff}
+
+/* MATRIX */
+.matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.mx{border:1px solid var(--line);background:var(--panel);padding:34px;transition:border-color .4s,transform .4s,box-shadow .4s}
+.mx:hover{border-color:var(--rose);transform:translateY(-8px);box-shadow:0 20px 60px rgba(255,107,157,.14)}
+.mx .mono{display:block;margin-bottom:10px}
+.mx h3{font-size:1.8rem;margin-bottom:18px}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:46px;display:grid;gap:30px}
+.tl::before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:2px;background:rgba(255,255,255,.08)}
+.tl-fill{position:absolute;left:10px;top:6px;width:2px;height:0;background:var(--gg);box-shadow:0 0 18px var(--rose)}
+.ti{position:relative;border:1px solid var(--line);background:var(--panel);padding:30px 34px;transition:border-color .4s,transform .4s}
+.ti:hover{border-color:var(--rose);transform:translateX(8px)}
+.tl .ti::before{content:"";position:absolute;left:-44px;top:38px;width:14px;height:14px;border-radius:50%;background:#0b2e25;border:2px solid rgba(255,255,255,.25);transition:.5s}
+.tl .ti.on::before{background:var(--rose);border-color:var(--rose);box-shadow:0 0 0 6px rgba(255,107,157,.2),0 0 26px var(--rose)}
+.ti h3{font-size:1.9rem;margin:6px 0 2px}
+.ti .org{color:var(--mint2);font-size:.92rem;margin-bottom:12px}
+.ti ul{padding-left:18px;color:var(--muted);font-size:.92rem}
+.ti li{margin-bottom:6px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:34px}
+.certs{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.cert{padding:12px 20px;border:1px solid var(--line);background:var(--panel);font-size:.86rem;transition:.3s;opacity:0;transform:translateY(24px) scale(.9)}
+.certs.show .cert{opacity:1;transform:none;transition:opacity .6s calc(var(--i)*90ms),transform .7s calc(var(--i)*90ms) cubic-bezier(.2,1.3,.3,1),border-color .3s,color .3s}
+.cert:hover{border-color:var(--rose);color:var(--peach)}
+.cert.hl{border-color:var(--mint);background:rgba(93,242,192,.1);color:var(--mint2)}
+
+/* CONTACT */
+.big-cta{font-size:clamp(2.6rem,8vw,7rem);margin-bottom:40px}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}
+.contact p.lead{color:var(--muted);max-width:430px;margin-bottom:30px}
+.info a,.info button.cp{display:flex;align-items:center;gap:16px;padding:16px 0;border:0;border-bottom:1px solid rgba(255,255,255,.07);transition:.3s;color:var(--text);background:none;width:100%;text-align:left;font:inherit}
+.info a:hover,.info button.cp:hover{color:var(--peach);padding-left:10px}
+.info em{font-style:normal;font-family:'JetBrains Mono';font-size:.62rem;letter-spacing:2px;color:var(--mint);width:78px;text-transform:uppercase}
+.info .cp small{margin-left:auto;font-family:'JetBrains Mono';font-size:.58rem;letter-spacing:2px;color:var(--rose);text-transform:uppercase}
+form{border:1px solid var(--line);background:var(--panel);padding:36px;display:grid;gap:16px}
+input,textarea{width:100%;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1);color:#fff;padding:15px 18px;font:inherit;outline:none;transition:.3s}
+input:focus,textarea:focus{border-color:var(--mint);box-shadow:0 0 0 3px rgba(93,242,192,.14)}
+form button{font-family:inherit;cursor:pointer}
+footer{position:relative;z-index:1;max-width:1300px;margin:60px auto 0;padding:30px 6%;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:.8rem}
+footer a{color:var(--mint);font-family:'JetBrains Mono';font-size:.66rem;letter-spacing:3px;text-transform:uppercase}
+#toast{position:fixed;left:50%;bottom:36px;transform:translate(-50%,40px);opacity:0;z-index:300;padding:14px 26px;background:var(--gg);color:#240814;font-weight:600;font-size:.84rem;letter-spacing:1px;transition:.5s cubic-bezier(.2,1.2,.3,1);pointer-events:none}
+#toast.show{transform:translate(-50%,0);opacity:1}
+
+.rv{opacity:0;transform:translateY(46px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
+.rv.show{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-60px);transition:1s cubic-bezier(.2,.8,.2,1)}
+.rl.show{opacity:1;transform:none}
+
+
+/* ---- extras ---- */
+.skip{position:fixed;left:12px;top:-70px;z-index:10000;background:var(--gg);color:#240814;padding:10px 18px;font-weight:700;transition:top .3s}
+.skip:focus{top:12px}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+.nav-r{display:flex;align-items:center;gap:12px}
+.kbd{font-family:'JetBrains Mono';font-size:.64rem;letter-spacing:2px;color:var(--muted);border:1px solid var(--line);background:rgba(255,255,255,.03);padding:10px 14px;cursor:pointer;transition:.3s}
+.kbd:hover{color:#fff;border-color:var(--rose)}
+.walkvid{position:absolute;left:50%;bottom:0;height:108%;width:auto;max-width:none;transform:translateX(-50%);z-index:4;opacity:0;transition:opacity .8s;pointer-events:none;
+  mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(ellipse 62% 64% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(ellipse 62% 64% at 50% 50%,#000 60%,transparent 100%)}
+.stage.hasvid .walkvid{opacity:1}
+.stage.hasvid .walk{display:none}
+.stage.alpha .walkvid{mix-blend-mode:normal;-webkit-mask-image:none;mask-image:none;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))}
+.sphere-wrap{position:relative;height:440px;margin:0 0 50px;border:1px solid var(--line);background:radial-gradient(circle at 50% 50%,rgba(93,242,192,.09),transparent 65%);overflow:hidden}
+.sphere-wrap canvas{position:absolute;inset:0;width:100%;height:100%}
+.sphere-wrap small{position:absolute;left:18px;bottom:14px;font-family:'JetBrains Mono';font-size:.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+.cs{margin-left:18px;background:none;border:1px solid var(--line);color:var(--mint2);font-family:'JetBrains Mono';font-size:.68rem;letter-spacing:2.5px;text-transform:uppercase;padding:9px 16px;cursor:pointer;transition:.3s}
+.cs:hover{background:var(--mint);color:#04130f}
+.ov{position:fixed;inset:0;z-index:500;background:rgba(2,10,8,.74);backdrop-filter:blur(10px);display:grid;place-items:start center;padding-top:14vh}
+.ov[hidden]{display:none}
+@keyframes palin{from{opacity:0;transform:translateY(-16px) scale(.97)}}
+.pal-box,.modal-box{width:min(600px,92vw);background:#08201a;border:1px solid var(--line);box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 60px rgba(255,107,157,.12);animation:palin .35s cubic-bezier(.2,1.2,.3,1)}
+.pal-box input{border:0;border-bottom:1px solid var(--line);background:transparent;padding:20px 22px;font-size:1rem}
+.pal-box input:focus{box-shadow:none}
+#palList{list-style:none;max-height:340px;overflow:auto;padding:8px}
+#palList li{display:flex;justify-content:space-between;gap:14px;padding:12px 16px;cursor:pointer;font-size:.92rem}
+#palList li em{font-style:normal;font-family:'JetBrains Mono';font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+#palList li.on{background:rgba(255,107,157,.14);color:#fff}
+#palList li.on em{color:var(--rose)}
+#palList li.none{color:var(--muted);cursor:default}
+.pal-foot{padding:12px 20px;border-top:1px solid var(--line);font-family:'JetBrains Mono';font-size:.58rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.modal-box{border-color:var(--rose);padding:40px;position:relative;max-height:78vh;overflow:auto}
+.modal-box h3{font-size:2.4rem;margin:6px 0 18px}
+.modal-box ul{padding-left:20px;color:var(--muted);font-size:.95rem}
+.modal-box li{margin-bottom:10px}
+.modal-x{position:absolute;right:16px;top:12px;background:none;border:0;color:var(--muted);font-size:1.8rem;cursor:pointer}
+.modal-x:hover{color:var(--rose)}
+.fab{position:fixed;right:22px;bottom:88px;z-index:400;width:64px;height:64px;border-radius:50%;border:0;background:var(--gg);color:#240814;font-weight:800;font-size:.68rem;letter-spacing:1px;box-shadow:0 12px 40px rgba(255,107,157,.5);cursor:pointer;display:grid;place-items:center;animation:fabp 3s infinite}
+@keyframes fabp{50%{box-shadow:0 12px 64px rgba(255,107,157,.9)}}
+.chat{position:fixed;right:22px;bottom:164px;z-index:400;width:min(380px,calc(100vw - 32px));height:min(540px,70vh);display:flex;flex-direction:column;background:#07201a;border:1px solid var(--line);box-shadow:0 30px 100px rgba(0,0,0,.6);transform-origin:100% 100%;animation:chatin .4s cubic-bezier(.2,1.1,.3,1)}
+.chat[hidden]{display:none}
+@keyframes chatin{from{opacity:0;transform:scale(.8) translateY(20px)}}
+.chat-h{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px}
+.chat-h i{width:10px;height:10px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint)}
+.chat-h b{font-family:'Anton';letter-spacing:1px;text-transform:uppercase;font-weight:400;font-size:1.1rem}
+.chat-h small{display:block;color:var(--muted);font-size:.66rem;letter-spacing:1px;line-height:1.2}
+.chat-h button{margin-left:auto;background:none;border:0;color:var(--muted);font-size:1.4rem;cursor:pointer}
+#msgs{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:90%;padding:11px 15px;font-size:.88rem;line-height:1.55;animation:up .4s both}
+.msg.bot{background:rgba(93,242,192,.08);border:1px solid var(--line);align-self:flex-start}
+.msg.usr{background:var(--gg);color:#240814;align-self:flex-end;font-weight:600}
+.msg a{color:var(--peach);text-decoration:underline}
+.dots span{display:inline-block;width:6px;height:6px;margin:0 2px;border-radius:50%;background:var(--mint);animation:dot 1s infinite}
+.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}
+@keyframes dot{50%{transform:translateY(-5px);opacity:.4}}
+#chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
+#chips button{font:inherit;font-size:.72rem;padding:6px 12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--mint2);cursor:pointer;border-radius:30px;transition:.3s}
+#chips button:hover{background:var(--mint);color:#04130f}
+.chat form{display:flex;gap:8px;padding:12px;border:0;border-top:1px solid var(--line);background:transparent}
+.chat form input{flex:1;padding:12px 14px}
+.chat form button{border:0;background:var(--gg);color:#240814;font-weight:700;padding:0 18px;cursor:pointer}
+@media print{#bg,#loader,nav,#cur,#curR,.fab,.chat,#prog,.mq,.scrollcue{display:none!important}body{background:#fff;color:#000}*{animation:none!important}.rv,.rl,.cert{opacity:1!important;transform:none!important}}
+@media(max-width:900px){
+  nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:20px;padding:26px 6%;background:rgba(4,19,15,.97);display:none;border-bottom:1px solid var(--line)}
+  nav ul.open{display:flex} .burger{display:block} .nav-r{display:none}
+  .cs{margin:14px 0 0}
+  .sphere-wrap{height:340px}
+  .chat{right:16px;bottom:150px}.fab{right:16px;bottom:82px}
+  #home{grid-template-columns:minmax(0,1fr);padding-top:100px;gap:20px}
+  .hero-l h1{font-size:clamp(2.8rem,12.5vw,5.4rem)}
+  .hero-r{height:500px}
+  .sig span{font-size:2.6rem} .initials{font-size:7rem}
+  .badge{font-size:.56rem;padding:7px 12px} .b1{left:0}.b2{right:0}
+  .spin-badge{width:84px;height:84px;right:0}
+  .scrollcue{display:none}
+  .about,.contact{grid-template-columns:1fr}
+  .work{grid-template-columns:1fr;padding:26px;top:calc(80px + var(--k)*18px);margin-bottom:8vh} .num{font-size:2.4rem}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}}
+
+/* walking video: show as its own arch window (hides the green arch behind it) */
+.stage.hasvid .arch,
+.stage.hasvid .initials,
+.stage.hasvid .ring{display:none}
+.stage.hasvid .walkvid{
+  height:108%;
+  bottom:-9.7%;
+  mix-blend-mode:normal!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  clip-path:inset(0 0 9% 0 round 999px 999px 0 0);
+  filter:none;
+}
+
+/* LIGHT THEME (toggle in nav) */
+.theme{margin-left:14px}
+[data-theme="light"]{--bg:#f4f8f6;--panel:rgba(0,0,0,.035);--line:rgba(8,110,84,.28);--text:#12231d;--muted:#4d625a;--mint:#0b7a5c;--mint2:#0b7a5c;--rose:#d6336c}
+[data-theme="light"] #bg{opacity:.22}
+[data-theme="light"] nav.solid{background:rgba(244,248,246,.9)}
+[data-theme="light"] nav ul a:hover,[data-theme="light"] .kbd:hover,[data-theme="light"] .demo:hover{color:var(--text)}
+[data-theme="light"] .pal-box,[data-theme="light"] .modal-box,[data-theme="light"] .chat{background:#fff}
+[data-theme="light"] .spec,[data-theme="light"] input,[data-theme="light"] textarea{background:rgba(0,0,0,.04);color:var(--text);border-color:rgba(0,0,0,.12)}
+[data-theme="light"] .mq span{-webkit-text-stroke-color:rgba(0,0,0,.5)}
+[data-theme="light"] .tl::before{background:rgba(0,0,0,.1)}
+[data-theme="light"] .tl .ti::before{background:#d9efe7}
+[data-theme="light"] .spec div,[data-theme="light"] .info a,[data-theme="light"] .info button.cp{border-color:rgba(0,0,0,.1)}
+[data-theme="light"] .work{--text:#f3efe9;--muted:#9db3ab;--mint:#5df2c0;--mint2:#b8ffe6;--rose:#ff6b9d;--line:rgba(93,242,192,.22);color:#f3efe9}
+[data-theme="light"] .work .spec{background:rgba(0,0,0,.35);border-color:rgba(255,255,255,.07)}
+[data-theme="light"] .work .spec div{border-color:rgba(255,255,255,.06)}
+@media(max-width:900px){[data-theme="light"] nav ul{background:rgba(244,248,246,.98)}}
+</style>
+</head>
+<body class="lock">
+<a class="skip" href="#about">Skip to content</a>
+
+<div id="loader"><div class="ld">
+  <div class="ld-name" id="ldName"></div>
+  <div class="ld-bar"><i id="ldBar"></i></div>
+  <div class="ld-num"><span id="ldNum">0</span>%</div>
+</div></div>
+
+<div id="prog"></div>
+<canvas id="bg"></canvas>
+<div id="cur"></div><div id="curR"></div>
+<div id="toast">Email copied to clipboard</div>
+
+<nav id="nav">
+  <a href="#home" class="logo">JAPNEET<b>.</b></a>
+  <ul id="links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-r"><button class="kbd" id="palBtn" type="button" aria-label="Open command menu">Ctrl K</button><a href="#contact" class="talk mag">Let's talk ↗</a></div>
+  <button class="kbd theme" id="themeBtn" type="button" aria-label="Switch between light and dark theme">Light</button>
+  <div class="burger" role="button" tabindex="0" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">☰</div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-l">
+    <div class="roles"><b>&gt;</b> <span id="role">MBA Business Analytics</span></div>
+    <h1 class="display">
+      <span class="ln" data-split data-line="0">I build</span>
+      <span class="ln" data-split data-line="1" data-grad>intelligent</span>
+      <span class="ln" data-split data-line="2" data-grad>solutions.</span>
+    </h1>
+    <p>I'm <b style="color:var(--text)">Japneet Kour</b>, an MBA Business Analytics candidate. I clean, analyse and visualise data to uncover insights that drive business decisions, backed by Python, Excel and machine learning, and a foundation in accounting and operations. I also build AI tools that make data easier to use.</p>
+    <div class="btns">
+      <a href="#projects" class="btn fill mag">Explore my work ↓</a>
+      <a href="Japneet_Kour_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn line mag">Download resume</a>
+    </div>
+    <div class="scrollcue"><i></i>Scroll to explore</div>
+  </div>
+  <div class="hero-r">
+    <div class="stage" id="stage">
+      <div class="beam"></div>
+      <div class="arch"></div>
+      <div class="initials">JK</div>
+      <div class="ring"></div>
+      <div class="floor"></div>
+      <div class="walk"><div class="step"><div class="float"><img class="me" id="me" src="photo.png" alt="Japneet Kour"></div></div></div>
+      <video class="walkvid" id="walkvid" autoplay muted playsinline loop preload="auto" aria-label="Portfolio introduction video"><source src="walk.webm" type="video/webm"><source src="walk.mp4" type="video/mp4"></video>
+      <div class="badge b1"><i>●</i>Python</div>
+      <div class="badge b2"><i>●</i>RAG &amp; GenAI</div>
+      <div class="badge b3"><i>●</i>Analytics</div>
+      <a href="#contact" class="spin-badge mag">
+        <svg viewBox="0 0 120 120"><defs><path id="cp" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs>
+          <text><textPath href="#cp" textLength="292" lengthAdjust="spacing">OPEN TO WORK • OPEN TO WORK • </textPath></text></svg>
+        <b>↗</b>
+      </a>
+      <div class="sig"><small>Data is my craft.<br>Impact is my goal.</small><span>Japneet</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEES -->
+<div class="mq"><div class="tr" data-dup>
+  <span>Business Analytics</span><span class="s">✦</span><span class="f">Generative AI</span><span class="s">✦</span><span>RAG</span><span class="s">✦</span><span class="f">Python</span><span class="s">✦</span><span>Machine Learning</span><span class="s">✦</span><span class="f">Streamlit</span><span class="s">✦</span>
+</div></div>
+<div class="mq two"><div class="tr" data-dup>
+  <span class="f">Data Storytelling</span><span class="s">✦</span><span>LLM APIs</span><span class="s">✦</span><span class="f">Agentic AI</span><span class="s">✦</span><span>Data Management</span><span class="s">✦</span><span class="f">Excel</span><span class="s">✦</span><span>Prompt Engineering</span><span class="s">✦</span>
+</div></div>
+
+<!-- STATEMENT -->
+<section id="statement" style="padding-bottom:20px">
+  <span class="mono label rv">Manifesto</span>
+  <p class="statement" id="statement-text">I turn raw data into decisions and ideas into working AI products, from RAG chatbots that answer real admissions questions to assistants that build presentations on command.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+    <div class="rv">
+      <span class="mono label">01 / About me</span>
+      <h2 class="display">I don't just analyse data.<br><span class="gold">I build what's next.</span></h2>
+      <p>I'm an <b>MBA (Business Analytics)</b> candidate at Eternal University, Baru Sahib, with hands-on experience designing and deploying AI-powered applications, backed by a strong grounding in data analysis, financial reconciliation and cross-functional business operations.</p>
+      <p>I independently designed and shipped two AI chatbots, <b>Omnix.ai</b> and a <b>RAG-based university admissions assistant</b>, combining Python, LLM APIs and vector search with practical analytics skills in Machine Learning and Excel.</p>
+      <p>Most recently I completed the <b>Data Analytics &amp; Power BI Internship at Datheon</b> with Grade A+ (Distinction), delivering a Python exploratory analysis, an interactive Power BI executive dashboard and a customer churn study.</p>
+      <p>I'm looking for entry-level opportunities in <b>business analytics, data analysis or technology-driven business roles</b>.</p>
+    </div>
+    <div class="stats rv">
+      <div class="stat spot"><h3 class="gold" data-n="9.22" data-d="2">0</h3><p>MBA CGPA</p></div>
+      <div class="stat spot"><h3 class="gold" data-n="8.17" data-d="2">0</h3><p>B.Com (Hons.) CGPA</p></div>
+      <div class="stat spot"><h3 class="gold" data-n="2" data-s="">0</h3><p>AI chatbots shipped</p></div>
+      <div class="stat spot"><h3 class="gold" data-n="10" data-s="">0</h3><p>Certifications</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <span class="mono label rv">02 / Featured work</span>
+  <h2 class="display sec-title rv">Selected works.<br><span class="gold">Engineered value.</span></h2>
+
+  <article class="work spot" style="--k:0">
+    <div class="num">01</div>
+    <div>
+      <span class="mono">Multi-modal AI assistant · 2026</span>
+      <h3>Omnix.ai</h3>
+      <p>A full-stack conversational AI assistant built solo, end to end, in Python and Streamlit. It replicates core ChatGPT-style functionality (open-domain Q&amp;A, multilingual chat and file-based question answering) and turns plain-language requests into formatted PowerPoint decks and Word documents.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Groq API</span><span class="chip">python-pptx</span><span class="chip">GenAI</span></div>
+      <a class="demo mag" href="https://rag-chatbot-m3mjfxazpbhmzzpj3qczcs.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a><button class="cs" type="button" data-cs="omnix">Case details +</button>
+    </div>
+    <div class="spec">
+      <div><span>Type</span><span>Independent · solo build</span></div>
+      <div><span>Output</span><span>PPTX &amp; DOCX generation</span></div>
+      <div><span>Smart layout</span><span>Auto text/background contrast</span></div>
+      <div><span>Commands</span><span>Custom plain-language parsing</span></div>
+      <div><span>Reliability</span><span>Multi-provider API fallback</span></div>
+    </div>
+  </article>
+
+  <article class="work spot" style="--k:1">
+    <div class="num">02</div>
+    <div>
+      <span class="mono">RAG chatbot · 2026</span>
+      <h3>Akal University Admissions Assistant</h3>
+      <p>A Retrieval-Augmented Generation chatbot that answers prospective-student queries in real time, using a curated knowledge base covering programs, fee structures, instalment plans, scholarships, hostels and the admissions process. Deployed on Streamlit Cloud for the university admissions portal, aiming to lift student engagement and conversions.</p>
+      <div class="chips"><span class="chip">LangChain</span><span class="chip">FAISS</span><span class="chip">Sentence Transformers</span><span class="chip">RAG</span><span class="chip">Streamlit</span></div>
+      <a class="demo mag" href="https://akal-university-admissions-assistant-ydc7tdktutpet69oxmqb8k.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a><button class="cs" type="button" data-cs="akal">Case details +</button>
+    </div>
+    <div class="spec">
+      <div><span>Type</span><span>Guided project</span></div>
+      <div><span>Guides</span><span>Dr. Sukhjeet Singh &amp; Prof. Somendra Pant</span></div>
+      <div><span>Retrieval</span><span>FAISS vector search</span></div>
+      <div><span>Embeddings</span><span>Sentence Transformer</span></div>
+      <div><span>Deployment</span><span>Streamlit Cloud</span></div>
+    </div>
+  </article>
+
+  <article class="work spot" style="--k:2">
+    <div class="num">03</div>
+    <div>
+      <span class="mono">Exploratory data analysis · Datheon · 2026</span>
+      <h3>Superstore Sales EDA</h3>
+      <p>A cleaned and analysed retail dataset of 9,994 order lines. I found stray non-order rows hiding as missing values, then studied seasonality, category revenue and discount sensitivity. Orders discounted above 20% turned loss-making, and Furniture earned only about a 2.5% margin.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Seaborn</span><span class="chip">Jupyter</span></div>
+      <a class="demo mag" href="https://github.com/kour04641-byte/Datheon_Data_Analytics_-_Power_BI_Internship" target="_blank" rel="noopener">GitHub ↗</a><button class="cs" type="button" data-cs="superstore">Case details +</button>
+    </div>
+    <div class="spec">
+      <div><span>Type</span><span>Internship project</span></div><div><span>Records</span><span>9,994 order lines</span></div><div><span>Key finding</span><span>Discounts above 20% lose money</span></div><div><span>Output</span><span>Jupyter notebook, 5 findings</span></div>
+    </div>
+  </article>
+
+  <article class="work spot" style="--k:3">
+    <div class="num">04</div>
+    <div>
+      <span class="mono">Business intelligence · Datheon · 2026</span>
+      <h3>Power BI Executive Dashboard</h3>
+      <p>An interactive executive dashboard on a star schema with DAX measures for sales, profit, margin and year-over-year growth, plus KPI cards, Year and Region slicers, a category treemap, a profitability matrix and a state-level table.</p>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">Star schema</span></div>
+      <a class="demo mag" href="https://github.com/kour04641-byte/Datheon_Data_Analytics_-_Power_BI_Internship" target="_blank" rel="noopener">GitHub ↗</a><button class="cs" type="button" data-cs="powerbi">Case details +</button>
+    </div>
+    <div class="spec">
+      <div><span>Type</span><span>Internship project</span></div><div><span>Model</span><span>Fact + 3 dimension tables</span></div><div><span>Measures</span><span>Sales, Profit, Margin %, YoY</span></div><div><span>Output</span><span>.pbix file and PDF report</span></div>
+    </div>
+  </article>
+
+  <article class="work spot" style="--k:4">
+    <div class="num">05</div>
+    <div>
+      <span class="mono">Retention analysis · Datheon · 2026</span>
+      <h3>Telco Customer Churn Analytics</h3>
+      <p>A retention study of 7,043 telecom customers using Kaplan-Meier retention curves and a cohort retention matrix. Month-to-month customers churned at about 43% versus under 3% on two-year contracts, and fiber customers without tech support churned at about 49%.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div>
+      <a class="demo mag" href="https://github.com/kour04641-byte/Datheon_Data_Analytics_-_Power_BI_Internship" target="_blank" rel="noopener">GitHub ↗</a><button class="cs" type="button" data-cs="churn">Case details +</button>
+    </div>
+    <div class="spec">
+      <div><span>Type</span><span>Internship project</span></div><div><span>Customers</span><span>7,043</span></div><div><span>Baseline churn</span><span>26.5%</span></div><div><span>Output</span><span>Retention curves, cohort matrix</span></div>
+    </div>
+  </article>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="padding-top:20px">
+  <span class="mono label rv">03 / Tech matrix</span>
+  <h2 class="display sec-title rv">Analytical mastery.<br><span class="gold">Precision applied.</span></h2>
+  <div class="sphere-wrap rv"><canvas id="sphere" aria-label="Interactive 3D cloud of Japneet's skills"></canvas><small>Move your mouse over the sphere</small></div>
+  <div class="matrix">
+    <div class="mx spot rv"><span class="mono">Programming &amp; AI/ML</span><h3>AI Engineering</h3>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Generative AI</span><span class="chip">RAG</span><span class="chip">Prompt Engineering</span><span class="chip">LLM APIs (Groq, OpenAI-compatible)</span><span class="chip">Agentic AI</span><span class="chip">Claude</span></div></div>
+    <div class="mx spot rv"><span class="mono">Data &amp; Analytics</span><h3>Business Analytics</h3>
+      <div class="chips"><span class="chip">Data Analysis</span><span class="chip">Data Interpretation</span><span class="chip">Data Visualization</span><span class="chip">Data Management</span><span class="chip">Microsoft Excel</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Pandas</span><span class="chip">EDA</span></div></div>
+    <div class="mx spot rv"><span class="mono">Application Development</span><h3>Build &amp; Deploy</h3>
+      <div class="chips"><span class="chip">Streamlit</span><span class="chip">API Integration</span><span class="chip">Cloud Computing</span></div></div>
+    <div class="mx spot rv"><span class="mono">Business &amp; Operations</span><h3>Business Core</h3>
+      <div class="chips"><span class="chip">Financial Accounting</span><span class="chip">ERP Fundamentals</span><span class="chip">Supply Chain &amp; Logistics</span><span class="chip">Presentation Skills</span></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <span class="mono label rv">04 / Journey</span>
+  <h2 class="display sec-title rv">Experience &amp;<br><span class="gold">education.</span></h2>
+  <div class="tl" id="tl">
+    <div class="tl-fill" id="tlFill"></div>
+    <div class="ti rl">
+      <span class="mono">Jul 2024 – Sep 2024</span>
+      <h3>Accounts Department Intern</h3>
+      <div class="org">Akal Academy, Baru Sahib, Himachal Pradesh</div>
+      <ul>
+        <li>Maintained day-to-day bookkeeping records and financial documentation, ensuring accuracy and organisation of data.</li>
+        <li>Reconciled financial transactions and prepared supporting documentation under senior accounts staff.</li>
+        <li>Applied accounting procedures and recordkeeping practices to support departmental financial workflow.</li>
+      </ul>
+    </div>
+    <div class="ti rl">
+      <span class="mono">Jun 2026 – Jul 2026</span>
+      <h3>Business Intern</h3>
+      <div class="org">Xenage Solutions Pvt. Ltd. (Eagle Inbrit – Freight Forwarding), UK Team, Viman Nagar, Pune</div>
+      <ul>
+        <li>Coordinated with a UK-based freight forwarding team across time zones to deliver business and operational tasks.</li>
+        <li>Researched, scripted and produced animated training videos: company profile, shipping terminology, the end-to-end shipment process, booking/documentation/operations stages and the Bill of Lading.</li>
+        <li>Managed logistics documentation and process coordination, building working knowledge of freight forwarding and supply chain operations.</li>
+      </ul>
+    </div>
+    <div class="ti rl">
+      <span class="mono">Nov 2026</span>
+      <h3>Data Analytics &amp; Power BI Intern</h3>
+      <div class="org">Datheon (AI Systems &amp; Automation Studio)</div>
+      <ul>
+        <li>Completed a 4-week project-based internship with Grade A+ (Distinction) and a 9.3/10 code-audit score; awarded a Certificate of Completion and a Letter of Recommendation.</li>
+        <li>Cleaned and analysed retail sales data in Python, built an interactive Power BI dashboard on a star schema with DAX measures, and analysed customer churn with retention curves and a cohort matrix.</li>
+        <li>Published all work with documentation to a public GitHub repository.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="edu">
+    <div class="ti spot rv"><span class="mono">2025 – Present</span><h3>MBA · Business Analytics</h3><div class="org">Eternal University, Baru Sahib, Himachal Pradesh</div><p style="color:var(--muted);font-size:.92rem">Current CGPA: 9.22 / 10</p></div>
+    <div class="ti spot rv"><span class="mono">2022 – 2025</span><h3>B.Com (Hons.)</h3><div class="org">Eternal University, Baru Sahib, Himachal Pradesh</div><p style="color:var(--muted);font-size:.92rem">CGPA: 8.17 / 10</p></div>
+  </div>
+
+  <span class="mono label rv" style="margin-top:56px">Certifications &amp; training</span>
+  <div class="certs" id="certs">
+    <div class="cert hl" style="--i:0">Deloitte · Data Analytics</div>
+    <div class="cert" style="--i:1">RAG (Retrieval-Augmented Generation)</div>
+    <div class="cert" style="--i:2">Generative AI</div>
+    <div class="cert" style="--i:3">Machine Learning using Python</div>
+    <div class="cert" style="--i:4">Artificial Intelligence</div>
+    <div class="cert" style="--i:5">Cloud Computing</div>
+    <div class="cert" style="--i:6">Microsoft Excel</div>
+    <div class="cert" style="--i:7">ChatGPT for Cybersecurity</div>
+    <div class="cert hl" style="--i:8">Commonwealth Bank · Data Science</div>
+    <div class="cert hl" style="--i:9">Datheon · Data Analytics &amp; Power BI Internship (Grade A+)</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="mono label rv">05 / Contact</span>
+  <h2 class="display big-cta rv">Let's build<br><span class="gold">something great.</span></h2>
+  <div class="contact">
+    <div class="rv">
+      <p class="lead">Open to entry-level roles in business analytics, data analysis and technology-driven business teams. If you have an opportunity or a project in mind, let's talk.</p>
+      <div class="info">
+        <button class="cp" id="copyMail" type="button"><em>Email</em> japneetkour1984@gmail.com <small>Click to copy</small></button>
+        <a href="tel:+919270430996"><em>Phone</em> +91 92704 30996</a>
+        <a href="https://linkedin.com/in/japneet-kour-629607379" target="_blank" rel="noopener"><em>LinkedIn</em> linkedin.com/in/japneet-kour-629607379</a>
+        <a href="#contact"><em>Base</em> Baru Sahib, Himachal Pradesh</a>
+      </div>
+    </div>
+    <form class="rv spot" id="cf">
+      <input id="n" placeholder="Your name" required>
+      <input id="e" type="email" placeholder="Your email" required>
+      <textarea id="m" rows="5" placeholder="Your message" required></textarea>
+      <button class="btn fill mag" type="submit">Send transmission →</button>
+    </form>
+  </div>
+</section>
+
+<footer><span>© <span id="y"></span> Japneet Kour. All rights reserved.</span><a href="#home">Back to top ↑</a></footer>
+
+<div id="pal" class="ov" hidden><div class="pal-box" role="dialog" aria-label="Command menu">
+  <input id="palIn" placeholder="Type a command or search..." autocomplete="off" aria-label="Search commands">
+  <ul id="palList"></ul>
+  <div class="pal-foot">Up/Down navigate · Enter select · Esc close</div>
+</div></div>
+
+<div id="modal" class="ov" hidden><div class="modal-box" role="dialog" aria-label="Project details">
+  <button class="modal-x" id="modalX" aria-label="Close">×</button>
+  <span class="mono" id="mSub"></span><h3 id="mTitle"></h3><ul id="mList"></ul>
+</div></div>
+
+<button class="fab" id="fab" type="button" aria-label="Ask the resume bot">ASK<br>BOT</button>
+<div class="chat" id="chat" hidden>
+  <div class="chat-h"><i></i><div><b>Resume bot</b><small>Answers from Japneet's resume</small></div><button id="chatX" aria-label="Close chat">×</button></div>
+  <div id="msgs"></div>
+  <div id="chips"></div>
+  <form id="chatForm"><input id="chatIn" placeholder="Ask about skills, projects..." autocomplete="off" aria-label="Ask a question"><button type="submit">Send</button></form>
+</div>
+
+<script>
+(()=>{
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+
+/* photo fallback: tries a few common names if photo.png is missing */
+const me=$('#me');
+if(me){
+  const alts=['photo.jpg','photo.jpeg','photo.webp','photo.PNG','Photo.png'];let k=0;
+  const next=()=>{k<alts.length?me.src=alts[k++]:me.remove()};
+  me.addEventListener('error',next);
+  if(me.complete&&me.naturalWidth===0)next();
+}
+
+/* split text into letters (headline gets a rose->peach colour ramp) */
+const mix=t=>`rgb(255,${Math.round(93+104*t)},${Math.round(149-11*t)})`;
+$$('[data-split]').forEach(el=>{
+  const txt=el.textContent,grad=el.hasAttribute('data-grad'),line=+el.dataset.line||0;
+  el.textContent='';el.style.setProperty('--d',line*260);
+  [...txt].forEach((c,i,a)=>{
+    const s=document.createElement('span');s.className='ch';s.textContent=c===' '?'\u00a0':c;
+    s.style.setProperty('--i',i);if(grad)s.style.color=mix(i/(a.length-1||1));
+    el.appendChild(s);
+  });
+});
+
+/* statement: words light up as you scroll */
+const st=$('#statement-text');
+const hlWords=['data','decisions','AI','products','RAG'];
+st.innerHTML=st.textContent.split(' ').map(w=>`<span class="w${hlWords.some(h=>w.replace(/[^\w]/g,'')===h)?' hl':''}">${w}</span>`).join(' ');
+const words=$$('.w',st);
+
+/* marquee duplicates for seamless loop */
+$$('[data-dup]').forEach(t=>{t.innerHTML+=t.innerHTML});
+
+/* loader */
+const ldName=$('#ldName');
+[...'JAPNEET KOUR'].forEach((c,i)=>{const s=document.createElement('span');s.textContent=c===' '?'\u00a0':c;s.style.setProperty('--i',i);ldName.appendChild(s)});
+const ldNum=$('#ldNum'),ldBar=$('#ldBar'),t0=performance.now();
+(function ld(t){
+  const p=clamp((t-t0)/1800,0,1),e=1-Math.pow(1-p,3);
+  ldNum.textContent=Math.round(e*100);ldBar.style.transform=`scaleX(${e})`;
+  if(p<1)requestAnimationFrame(ld);
+  else setTimeout(()=>{
+    $('#loader').classList.add('done');document.body.classList.remove('lock');document.body.classList.add('loaded');
+    startRoles();playVid();setTimeout(()=>$('#loader')&&$('#loader').remove(),1400);
+  },300);
+})(t0);
+
+/* rotating role text with scramble */
+function scramble(el,text){
+  const pool='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&',total=20;let f=0;
+  const id=setInterval(()=>{
+    el.textContent=[...text].map((c,i)=>i<f/total*text.length||c===' '?c:pool[Math.random()*pool.length|0]).join('');
+    if(++f>total){clearInterval(id);el.textContent=text}
+  },35);
+}
+function startRoles(){
+  const roles=['MBA Business Analytics','AI & RAG Builder','Data Storyteller','Python Developer'],el=$('#role');let i=0;
+  setInterval(()=>{i=(i+1)%roles.length;scramble(el,roles[i])},3000);
+}
+
+/* particle network */
+const cv=$('#bg'),cx=cv.getContext('2d');let W,H,pts=[];const m={x:-999,y:-999};
+function size(){
+  W=cv.width=innerWidth;H=cv.height=innerHeight;
+  const n=Math.min(80,Math.floor(W*H/20000));
+  pts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.6+.6}));
+}
+size();addEventListener('resize',size);
+addEventListener('mousemove',e=>{m.x=e.clientX;m.y=e.clientY});
+(function draw(){
+  cx.clearRect(0,0,W,H);
+  for(const p of pts){
+    p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+    const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy);
+    if(d<130&&d>0){p.x+=dx/d*1.4;p.y+=dy/d*1.4}
+    cx.beginPath();cx.arc(p.x,p.y,p.r,0,7);cx.fillStyle='rgba(93,242,192,.75)';cx.fill();
+    if(d<180){cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(m.x,m.y);cx.strokeStyle=`rgba(255,107,157,${.35*(1-d/180)})`;cx.stroke()}
+  }
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+    const a=pts[i],b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+    if(d<130){cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.strokeStyle=`rgba(93,242,192,${.2*(1-d/130)})`;cx.stroke()}
+  }
+  requestAnimationFrame(draw);
+})();
+
+/* custom cursor */
+if(fine){
+  document.body.classList.add('has-cur');
+  const dot=$('#cur'),ring=$('#curR');let mx=0,my=0,rx=0,ry=0;
+  addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`});
+  (function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;requestAnimationFrame(loop)})();
+  document.addEventListener('mouseover',e=>ring.classList.toggle('big',!!e.target.closest('a,button,.mag,.work,.chip,.cert,.stat,.mx')));
+}
+
+/* magnetic buttons */
+if(fine)$$('.mag').forEach(el=>{
+  el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.28}px,${(e.clientY-r.top-r.height/2)*.4}px)`});
+  el.addEventListener('mouseleave',()=>el.style.transform='');
+});
+
+/* spotlight glow that follows the mouse on cards */
+$$('.spot').forEach(el=>el.addEventListener('mousemove',e=>{
+  const r=el.getBoundingClientRect();el.style.setProperty('--mx',(e.clientX-r.left)+'px');el.style.setProperty('--my',(e.clientY-r.top)+'px');
+}));
+
+/* 3D tilt on project cards */
+$$('.work').forEach(c=>{
+  c.addEventListener('mousemove',e=>{
+    const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    c.style.setProperty('--ry',(x*4)+'deg');c.style.setProperty('--rx',(-y*4)+'deg');
+  });
+  c.addEventListener('mouseleave',()=>{c.style.setProperty('--ry','0deg');c.style.setProperty('--rx','0deg')});
+});
+
+/* portrait: mouse parallax + click to replay the walk-in */
+const stage=$('#stage');
+if(stage&&me){
+  document.addEventListener('mousemove',e=>{
+    const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;
+    me.style.transform=`translateX(calc(-50% + ${x*26}px)) translateY(${y*12}px) rotate(${x*1.2}deg)`;
+    $$('.badge',stage).forEach((b,i)=>b.style.translate=`${-x*(18+i*8)}px ${-y*(14+i*6)}px`);
+    $('.arch',stage).style.translate=`${-x*10}px ${-y*6}px`;
+  });
+  stage.addEventListener('click',()=>{$$('.walk,.step,.float,.floor',stage).forEach(el=>{el.style.animation='none';el.offsetWidth;el.style.animation=''});});
+}
+
+/* reveal on scroll + counters + staggered certs */
+function count(el){
+  if(el.done)return;el.done=true;
+  const end=parseFloat(el.dataset.n),d=+el.dataset.d||0,suf=el.dataset.s||'';let s0=null;
+  (function step(ts){s0=s0||ts;const p=Math.min((ts-s0)/1800,1),e=1-Math.pow(1-p,3);
+    el.textContent=(end*e).toFixed(d)+(p===1?suf:'');if(p<1)requestAnimationFrame(step)})(performance.now());
+}
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  e.target.classList.add('show');
+  $$('[data-n]',e.target).forEach(count);
+  io.unobserve(e.target);
+}),{threshold:.12});
+$$('.rv,.rl,#certs').forEach(el=>io.observe(el));
+
+/* scroll-driven effects */
+const nav=$('#nav'),prog=$('#prog'),works=$$('.work'),tl=$('#tl'),tlFill=$('#tlFill'),tis=$$('.ti',tl);
+let lastY=0,ticking=false;
+function onScroll(){
+  const y=scrollY,max=document.documentElement.scrollHeight-innerHeight;
+  prog.style.transform=`scaleX(${max>0?y/max:0})`;
+  nav.classList.toggle('solid',y>40);
+  nav.classList.toggle('hide',y>lastY&&y>300&&!$('#links').classList.contains('open'));lastY=y;
+
+  const r=st.getBoundingClientRect(),p=clamp((innerHeight*.8-r.top)/(r.height+innerHeight*.3),0,1),lit=p*words.length;
+  words.forEach((w,i)=>w.classList.toggle('on',i<lit));
+
+  works.forEach((c,i)=>{
+    const nx=works[i+1];if(!nx){c.style.setProperty('--s',1);return}
+    const cr=c.getBoundingClientRect(),nr=nx.getBoundingClientRect();
+    const t=clamp(1-(nr.top-cr.top-30)/(cr.height*.9),0,1);
+    c.style.setProperty('--s',(1-.06*t).toFixed(4));
+  });
+
+  const tr=tl.getBoundingClientRect();
+  tlFill.style.height=clamp(innerHeight*.65-tr.top,0,tr.height-12)+'px';
+  tis.forEach(t=>t.classList.toggle('on',t.getBoundingClientRect().top<innerHeight*.65));
+  ticking=false;
+}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+addEventListener('resize',onScroll);onScroll();
+
+/* copy email */
+const toast=$('#toast');
+$('#copyMail').addEventListener('click',()=>{
+  const mail='japneetkour1984@gmail.com',done=()=>{toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200)};
+  (navigator.clipboard?navigator.clipboard.writeText(mail):Promise.reject()).then(done).catch(()=>{
+    const t=document.createElement('textarea');t.value=mail;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove();done();
+  });
+});
+
+/* contact form -> opens your email app, pre-addressed to Japneet */
+$('#cf').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=$('#n').value,em=$('#e').value,msg=$('#m').value;
+  location.href='mailto:japneetkour1984@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n)+
+    '&body='+encodeURIComponent(msg+'\n\n- '+n+' ('+em+')');
+});
+
+$$('#links a').forEach(a=>a.addEventListener('click',()=>$('#links').classList.remove('open')));
+$('#y').textContent=new Date().getFullYear();
+
+/* ===== walking video slot: drop walk.webm (transparent) or walk.mp4 next to index.html ===== */
+const vid=$('#walkvid');
+// Start muted so browsers permit autoplay. Visitors can enable sound with one click.
+if(vid){
+  vid.autoplay=true; vid.loop=true; vid.playsInline=true; vid.muted=true; vid.volume=1;
+  const initialPlay=vid.play();
+  if(initialPlay && initialPlay.catch) initialPlay.catch(()=>{});
+  vid.addEventListener('error',()=>{
+    console.warn('Portfolio video could not load. Check that walk.mp4 is beside index.html.');
+  });
+}
+function playVid(){
+  if(vid){
+    try { const p=vid.play(); if(p&&p.catch)p.catch(()=>{}); } catch(e) {}
+  }
+}
+if(vid){
+  const onVid=()=>{
+    if(stage) stage.classList.add('hasvid');
+    if(/\.webm/i.test(vid.currentSrc) && stage) stage.classList.add('alpha');
+    playVid();
+  };
+  vid.addEventListener('loadeddata',onVid);
+  vid.addEventListener('canplay',onVid);
+  if(vid.readyState>=2) onVid();
+  // Sound is enabled only after a visitor clicks the portrait/video area.
+  if(stage) stage.addEventListener('click',()=>{
+    vid.muted=false; vid.volume=1;
+    const p=vid.play(); if(p&&p.catch)p.catch(()=>{vid.muted=true;});
+  });
+}
+
+/* ===== 3D skill sphere ===== */
+(()=>{
+  const c=$('#sphere');if(!c)return;const x=c.getContext('2d');
+  const items=['Python','Machine Learning','Generative AI','RAG','Prompt Engineering','LLM APIs','Agentic AI','Claude','Data Analysis','Data Visualization','Data Management','Excel','Streamlit','API Integration','Cloud Computing','Financial Accounting','ERP','Supply Chain','Logistics','Presentation','LangChain','FAISS','Groq'];
+  let w=0,h=0,vis=true,ax=.004,ay=.002;const dpr=Math.min(devicePixelRatio||1,2);
+  const pts=items.map((t,i,a)=>{const k=i+.5,phi=Math.acos(1-2*k/a.length),th=Math.PI*(1+Math.sqrt(5))*k;return{t,x:Math.cos(th)*Math.sin(phi),y:Math.sin(th)*Math.sin(phi),z:Math.cos(phi)}});
+  function rs(){const r=c.getBoundingClientRect();w=r.width;h=r.height;c.width=w*dpr;c.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0)}
+  rs();addEventListener('resize',rs);
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();ax=((e.clientX-r.left)/r.width-.5)*.035;ay=((e.clientY-r.top)/r.height-.5)*.035});
+  c.addEventListener('mouseleave',()=>{ax=.004;ay=.002});
+  new IntersectionObserver(es=>{vis=es[0].isIntersecting}).observe(c);
+  (function loop(){
+    if(vis&&w){
+      x.clearRect(0,0,w,h);const R=Math.min(w*.3,h*.38);
+      const ca=Math.cos(ax),sa=Math.sin(ax),cb=Math.cos(ay),sb=Math.sin(ay);
+      for(const p of pts){
+        let X=p.x*ca+p.z*sa,Z=-p.x*sa+p.z*ca,Y=p.y*cb-Z*sb;Z=p.y*sb+Z*cb;
+        const n=Math.hypot(X,Y,Z)||1;p.x=X/n;p.y=Y/n;p.z=Z/n;
+      }
+      x.textAlign='center';x.textBaseline='middle';
+      [...pts].sort((a,b)=>a.z-b.z).forEach(p=>{
+        const sc=(p.z+1.4)/2.4,a=.2+.8*sc;
+        x.font=`${Math.round(11+14*sc)}px 'JetBrains Mono',monospace`;
+        x.fillStyle=p.z>0?`rgba(255,${Math.round(110+70*sc)},${Math.round(165-25*sc)},${a})`:`rgba(93,242,192,${a})`;
+        x.fillText(p.t,w/2+p.x*R*1.5,h/2+p.y*R);
+      });
+    }
+    requestAnimationFrame(loop);
+  })();
+})();
+
+/* ===== light / dark theme ===== */
+(function(){
+  const root=document.documentElement,btn=document.getElementById('themeBtn'),meta=document.querySelector('meta[name="theme-color"]');
+  function setTheme(t){root.dataset.theme=t;btn.textContent=t==='light'?'Dark':'Light';btn.setAttribute('aria-pressed',t==='light');meta.content=t==='light'?'#f4f8f6':'#04130f';try{localStorage.setItem('theme',t)}catch(e){}}
+  let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+  setTheme(saved||'dark');
+  btn.addEventListener('click',()=>setTheme(root.dataset.theme==='light'?'dark':'light'));
+})();
+
+/* ===== project case details ===== */
+const CS={
+  superstore:{s:'Exploratory data analysis · Datheon internship · 2026',t:'Superstore Sales EDA',p:[
+    'Cleaned a retail CSV by spotting 806 non-order rows (pasted lookup tables) that looked like missing values, leaving 9,994 order lines. Fixed dates, filled 11 missing postal codes and checked for duplicates and invalid values.',
+    'Analysed monthly seasonality, category and region performance and discount sensitivity. September to December delivered about 52% of annual sales.',
+    'Found that orders discounted above 20% were loss-making, and that Furniture earned only about a 2.5% margin because Tables and Bookcases lose money.',
+    'Delivered a Jupyter notebook with annotated business findings and recommendations.']},
+  powerbi:{s:'Business intelligence · Datheon internship · 2026',t:'Power BI Executive Dashboard',p:[
+    'Modelled the data as a star schema: a fact table with customer, product and date dimensions.',
+    'Wrote DAX measures for Total Sales, Total Profit, Profit Margin % (using DIVIDE) and year-over-year growth.',
+    'Built KPI cards, Year and Region slicers, a monthly sales trend, a category treemap, a profitability matrix and a regional state table.',
+    'Exported the report as a .pbix file and a PDF.']},
+  churn:{s:'Retention analysis · Datheon internship · 2026',t:'Telco Customer Churn Analytics',p:[
+    'Cleaned the IBM Telco dataset (TotalCharges stored as text; 11 blanks were brand-new customers) and measured a 26.5% baseline churn rate.',
+    'Built Kaplan-Meier retention curves and a cohort retention matrix by tenure and contract type. About 55% of churners leave within 12 months.',
+    'Month-to-month customers churned at about 43% versus under 3% on two-year contracts; electronic-check payers churned at about 45%.',
+    'Fiber optic customers without tech support churned at about 49%; the report ends with retention recommendations.']},
+  omnix:{s:'Multi-modal AI assistant · Solo, end-to-end build · 2026',t:'Omnix.ai',p:[
+    'Built a full-stack conversational AI assistant in Python and Streamlit, integrating LLM APIs (Groq) to replicate core ChatGPT-style functionality: open-domain Q&A, multilingual conversation and file-based question answering.',
+    'Engineered a content-generation pipeline that converts natural-language requests directly into formatted PowerPoint slide decks and Word documents, including automatic text/background contrast for readability.',
+    'Implemented custom command parsing so users can specify output requirements in plain language (for example file naming, heading fonts and sizes), automatically applied to the generated file.',
+    'Designed multi-provider fallback logic across AI APIs to maintain uptime and reliability under rate limits.']},
+  akal:{s:'RAG chatbot · Guided project · 2026',t:'Akal University Admissions Assistant',p:[
+    'Developed a Retrieval-Augmented Generation chatbot using LangChain, a FAISS vector store and Sentence Transformer embeddings to answer prospective-student admissions queries in real time.',
+    'Curated and structured a domain-specific knowledge base covering programs, fee structures, instalment plans, scholarships, hostel details and the admissions process.',
+    'Deployed the assistant on Streamlit Cloud for integration with the university admissions portal, aimed at improving student engagement and increasing admissions conversion.',
+    'Guides: Dr. Sukhjeet Singh (Director, IQAC) and Prof. Somendra Pant.']}
+};
+const modal=$('#modal');
+function openModal(id){const d=CS[id];$('#mSub').textContent=d.s;$('#mTitle').textContent=d.t;$('#mList').innerHTML=d.p.map(t=>`<li>${t}</li>`).join('');modal.hidden=false}
+function closeModal(){modal.hidden=true}
+$$('.cs').forEach(b=>b.addEventListener('click',()=>openModal(b.dataset.cs)));
+$('#modalX').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+
+/* ===== resume bot ===== */
+const chat=$('#chat'),msgs=$('#msgs'),chips=$('#chips'),chatIn=$('#chatIn');
+const A=(u,t)=>`<a href="${u}" target="_blank" rel="noopener">${t}</a>`;
+const KB=[
+  [/power ?bi|dashboard|churn|superstore|datheon|dax\b|\beda\b/,()=>`Japneet completed the <b>Data Analytics &amp; Power BI Internship at Datheon</b> (Grade A+, Distinction, 9.3/10). Projects: a <b>Superstore Sales EDA</b> in Python, an interactive <b>Power BI executive dashboard</b> (star schema, DAX) and a <b>Telco churn and retention analysis</b>. See the Projects section for details.`],
+  [/why|strength|special|stand out|choose/,()=>`Japneet pairs hands-on AI building (two chatbots shipped, both with live demos) with a Business Analytics MBA (CGPA 9.22) and real operations exposure from accounting and freight-forwarding internships. Japneet is looking for entry-level business analytics, data analysis or technology-driven business roles.`],
+  [/skill|tech|stack|tool|python|excel|know|language/,()=>`<b>AI/ML:</b> Python, Machine Learning, Generative AI, RAG, Prompt Engineering, LLM APIs (Groq, OpenAI-compatible), Agentic AI, Claude.<br><b>Analytics:</b> Data Analysis, Interpretation, Visualization, Data Management, Excel.<br><b>Development:</b> Streamlit, API integration, Cloud Computing.<br><b>Business:</b> Financial Accounting, ERP fundamentals, Supply Chain &amp; Logistics, Presentation Skills.`],
+  [/project|built|build|omnix|chatbot|rag\b|akal|demo/,()=>`<b>1. Omnix.ai</b>: a multi-modal AI assistant that answers questions and generates PowerPoint and Word files from plain language. ${A('https://rag-chatbot-m3mjfxazpbhmzzpj3qczcs.streamlit.app/','Live demo')}<br><b>2. Akal University Admissions Assistant</b>: a RAG chatbot using LangChain, FAISS and Sentence Transformers. ${A('https://akal-university-admissions-assistant-ydc7tdktutpet69oxmqb8k.streamlit.app/','Live demo')}`],
+  [/experience|intern|job|company|freight|logistic|accounts?\b|work/,()=>`<b>Accounts Department Intern</b>, Akal Academy, Baru Sahib (Jul-Sep 2024): bookkeeping, reconciliation and financial documentation.<br><b>Business Intern</b>, Xenage Solutions / Eagle Inbrit freight forwarding, UK team, Pune (Jun-Jul 2026): coordinated across time zones and produced animated training videos on shipping and logistics, including the Bill of Lading.<br><b>Data Analytics &amp; Power BI Intern</b>, Datheon (Nov 2026): Python EDA, a Power BI dashboard and churn analysis, graded A+ (Distinction).`],
+  [/educat|study|degree|mba|b\.?\s?com|universit|cgpa|college|grade|marks/,()=>`<b>MBA (Business Analytics)</b>, Eternal University, Baru Sahib, 2025-present, current CGPA 9.22/10.<br><b>B.Com (Hons.)</b>, Eternal University, 2022-2025, CGPA 8.17/10.`],
+  [/certif|course|training|workshop|deloitte|commonwealth/,()=>`Deloitte Data Analytics, RAG, Generative AI, Machine Learning using Python, Artificial Intelligence, Cloud Computing, Microsoft Excel, ChatGPT for Cybersecurity and Commonwealth Bank Data Science.`],
+  [/resume|cv|download|pdf/,()=>`You can download the resume with the "Download resume" button at the top, or press Ctrl+K and choose "Download resume (PDF)".`],
+  [/contact|email|mail|phone|call|reach|linkedin|location|where|based/,()=>`Email: japneetkour1984@gmail.com<br>Phone: +91 92704 30996<br>${A('https://linkedin.com/in/japneet-kour-629607379','LinkedIn')}<br>Based in Baru Sahib, Himachal Pradesh.`],
+  [/\b(hi|hello|hey|namaste)\b/,()=>`Hi! I'm a small bot that answers from Japneet's resume. Try one of the buttons below.`]
+];
+function answer(q){
+  q=q.toLowerCase();
+  for(const [re,fn] of KB)if(re.test(q))return fn();
+  return `I only know what's in Japneet's resume. Try asking about skills, projects, experience, education, certifications or contact details.`;
+}
+function addMsg(html,who){const d=document.createElement('div');d.className='msg '+who;if(who==='usr')d.textContent=html;else d.innerHTML=html;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
+function ask(q){
+  if(!q.trim())return;addMsg(q,'usr');
+  const d=addMsg('<span class="dots"><span></span><span></span><span></span></span>','bot');
+  setTimeout(()=>{d.innerHTML=answer(q);msgs.scrollTop=msgs.scrollHeight},550+Math.random()*450);
+}
+['Skills','Projects','Experience','Education','Certifications','Why hire Japneet?','Contact'].forEach(t=>{
+  const b=document.createElement('button');b.type='button';b.textContent=t;b.addEventListener('click',()=>ask(t));chips.appendChild(b);
+});
+function openChat(){chat.hidden=false;if(!msgs.children.length)addMsg(`Hi! Ask me anything about Japneet's skills, projects, experience or education.`,'bot');chatIn.focus()}
+function closeChat(){chat.hidden=true}
+$('#fab').addEventListener('click',()=>chat.hidden?openChat():closeChat());
+$('#chatX').addEventListener('click',closeChat);
+$('#chatForm').addEventListener('submit',e=>{e.preventDefault();ask(chatIn.value);chatIn.value=''});
+
+/* ===== command palette (Ctrl+K) ===== */
+const pal=$('#pal'),palIn=$('#palIn'),palList=$('#palList');
+const go=id=>()=>document.getElementById(id).scrollIntoView({behavior:'smooth'});
+const ext=u=>()=>window.open(u,'_blank','noopener');
+const cmds=[
+  {t:'Go to About',h:'section',r:go('about')},
+  {t:'Go to Projects',h:'section',r:go('projects')},
+  {t:'Go to Skills',h:'section',r:go('skills')},
+  {t:'Go to Experience',h:'section',r:go('experience')},
+  {t:'Go to Contact',h:'section',r:go('contact')},
+  {t:'Download resume (PDF)',h:'file',r:()=>{const a=document.createElement('a');a.href='Japneet_Kour_Resume.pdf';a.download='Japneet_Kour_Resume.pdf';document.body.appendChild(a);a.click();a.remove()}},
+  {t:'Copy email address',h:'action',r:()=>$('#copyMail').click()},
+  {t:'Open LinkedIn',h:'link',r:ext('https://linkedin.com/in/japneet-kour-629607379')},
+  {t:'Open Omnix.ai live demo',h:'link',r:ext('https://rag-chatbot-m3mjfxazpbhmzzpj3qczcs.streamlit.app/')},
+  {t:'Open Akal Admissions Assistant demo',h:'link',r:ext('https://akal-university-admissions-assistant-ydc7tdktutpet69oxmqb8k.streamlit.app/')},
+  {t:'Ask the resume bot',h:'chat',r:openChat},
+  {t:'Replay the hero walk-in',h:'fun',r:()=>{scrollTo({top:0,behavior:'smooth'});setTimeout(()=>stage&&stage.click(),700)}}
+];
+let sel=0,shown=cmds;
+function renderPal(){
+  const q=palIn.value.toLowerCase().trim();
+  shown=cmds.filter(c=>(c.t+' '+c.h).toLowerCase().includes(q));
+  sel=Math.min(sel,Math.max(shown.length-1,0));
+  palList.innerHTML=shown.map((c,i)=>`<li data-i="${i}" class="${i===sel?'on':''}"><span>${c.t}</span><em>${c.h}</em></li>`).join('')||'<li class="none">No results</li>';
+}
+function openPal(){pal.hidden=false;palIn.value='';sel=0;renderPal();palIn.focus()}
+function closePal(){pal.hidden=true}
+function runCmd(i){const c=shown[i];if(!c)return;closePal();setTimeout(c.r,120)}
+palList.addEventListener('click',e=>{const li=e.target.closest('li[data-i]');if(li)runCmd(+li.dataset.i)});
+palIn.addEventListener('input',()=>{sel=0;renderPal()});
+palIn.addEventListener('keydown',e=>{
+  const n=shown.length||1;
+  if(e.key==='ArrowDown'){sel=(sel+1)%n;renderPal();e.preventDefault()}
+  else if(e.key==='ArrowUp'){sel=(sel-1+n)%n;renderPal();e.preventDefault()}
+  else if(e.key==='Enter')runCmd(sel);
+});
+pal.addEventListener('click',e=>{if(e.target===pal)closePal()});
+$('#palBtn').addEventListener('click',openPal);
+addEventListener('keydown',e=>{
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();pal.hidden?openPal():closePal()}
+  if(e.key==='Escape'){closePal();closeModal();closeChat()}
+});
+$('.burger').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')$('#links').classList.toggle('open')});
+})();
+</script>
+</body>
+</html>
