@@ -65,3 +65,4 @@ kbd{background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:
 .confetti{position:fixed;width:8px;height:12px;pointer-events:none;z-index:9;animation:fall .9s ease-out forwards}
 @keyframes fall{to{transform:translate(var(--x),var(--y)) rotate(540deg);opacity:0}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.toast[hidden]{display:none}
