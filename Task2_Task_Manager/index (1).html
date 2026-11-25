@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taskboard · Task Manager & Productivity Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <main class="main">
+      <header class="top">
+        <div>
+          <h1 id="greeting">Today's plan</h1>
+          <p id="stats" class="stats" aria-live="polite"></p>
+        </div>
+        <button id="theme" class="icon" aria-label="Toggle dark mode">◐</button>
+      </header>
+
+      <form id="task-form" class="form">
+        <input id="title" type="text" placeholder="What needs doing?  (press N)" maxlength="100" required aria-label="Task title">
+        <select id="category" aria-label="Category"><option>Work</option><option>Personal</option><option>Study</option><option>Health</option></select>
+        <select id="priority" aria-label="Priority"><option>Low</option><option selected>Medium</option><option>High</option></select>
+        <input id="due" type="date" aria-label="Due date">
+        <button id="submit-btn" type="submit">Add task</button>
+        <button id="cancel-btn" type="button" class="ghost" hidden>Cancel</button>
+      </form>
+
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search tasks  (press /)" aria-label="Search tasks">
+        <div id="filters" class="seg" role="group" aria-label="Filter by status">
+          <button data-filter="all" class="active">All</button><button data-filter="active">Active</button><button data-filter="completed">Completed</button>
+        </div>
+        <select id="sort" aria-label="Sort tasks">
+          <option value="manual">Manual order</option><option value="due">Due date</option><option value="priority">Priority</option><option value="newest">Newest</option>
+        </select>
+      </div>
+      <div id="cats" class="chips" aria-label="Filter by category"></div>
+
+      <ul id="task-list" class="list"></ul>
+
+      <footer class="foot">
+        <button id="clear" class="ghost">Clear completed</button>
+        <button id="export" class="ghost">Export JSON</button>
+        <label class="ghost btn">Import JSON<input id="import" type="file" accept=".json" hidden></label>
+      </footer>
+    </main>
+
+    <aside class="side">
+      <section class="panel">
+        <div class="ring-wrap">
+          <svg viewBox="0 0 80 80" class="ring" aria-hidden="true"><circle cx="40" cy="40" r="34"/><circle id="arc" cx="40" cy="40" r="34"/></svg>
+          <span id="pct" class="pct">0%</span>
+        </div>
+        <ul class="nums">
+          <li><b id="n-active">0</b> active</li><li><b id="n-done">0</b> done</li><li><b id="n-over" class="bad">0</b> overdue</li><li><b id="n-today">0</b> due today</li>
+        </ul>
+      </section>
+      <section class="panel focus">
+        <h2>Focus timer</h2>
+        <div id="clock" class="clock">25:00</div>
+        <div class="row">
+          <button id="f-start">Start</button><button id="f-reset" class="ghost">Reset</button>
+        </div>
+        <p class="muted"><span id="f-count">0</span> sessions today</p>
+      </section>
+      <section class="panel"><h2>Shortcuts</h2>
+        <p class="muted"><kbd>N</kbd> new task · <kbd>/</kbd> search · <kbd>Esc</kbd> cancel edit · double-click a title to edit</p>
+      </section>
+    </aside>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
